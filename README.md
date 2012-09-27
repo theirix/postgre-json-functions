@@ -203,7 +203,7 @@ C extension may be built and installed using [PGXS](http://www.postgresql.org/do
 
 Compilation:
 
-    make PG_CONFIG=<postgresql_install_dir>/bin/pg_config
+    gmake PG_CONFIG=<postgresql_install_dir>/bin/pg_config
 
 Compilations command also can be run from maven:
 
@@ -211,7 +211,7 @@ Compilations command also can be run from maven:
 
 Installation (as superuser):
 
-    make PG_CONFIG=<postgresql_install_dir>/bin/pg_config install
+    gmake PG_CONFIG=<postgresql_install_dir>/bin/pg_config install
 
 PostgreSQL server must be restarted and extension created in particular database as superuser:
 
@@ -223,7 +223,7 @@ To drop all functions use:
 
 To uninstall extension completely you may use this command (as superuser):
 
-    make PG_CONFIG=<postgresql_install_dir>/bin/pg_config uninstall
+    gmake PG_CONFIG=<postgresql_install_dir>/bin/pg_config uninstall
 
 License information
 -------------------
